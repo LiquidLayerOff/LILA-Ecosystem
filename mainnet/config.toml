@@ -1,0 +1,25 @@
+[Eth]
+NetworkId = 25186
+SyncMode = "full"
+
+[Node]
+HTTPHost = "localhost"
+HTTPPort = 3545
+HTTPVirtualHosts = ["localhost"]
+HTTPModules = ["personal", "eth", "net", "web3", "admin", "miner", "txpool", "debug"]
+AuthAddr = "localhost"
+AuthPort = 8551
+AuthVirtualHosts = ["localhost"]
+WSHost = "localhost"
+WSPort = 3546
+WSModules = ["personal", "eth", "net", "web3", "admin", "miner", "txpool", "debug"]
+GraphQLVirtualHosts = ["localhost"]
+
+
+[Node.P2P]
+MaxPeers = 200
+NoDiscovery = false
+BootstrapNodes = ["enode://339a5091becc27283e8d1db21107c8b4fe3fc5e28dd2efc14560c3e53f974bdf67bf803c9c238ae10dccab741caf7a67aacba9b24f352f1061f7888873fc0f0f@103.42.59.85:40606"]
+StaticNodes = ["enode://62648e314df4a22baa41a3f75a5504c274a712494487411380093fb2f6c04e66fddae58e9e00e8e71048271f450b1a3d94e93c82c0e38a0fbf049c7f0c4d19c9@103.42.59.85:40605"]
+TrustedNodes = []
+ListenAddr = ":40605"
